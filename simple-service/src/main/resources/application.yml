@@ -1,0 +1,14 @@
+
+info:
+    version: 1.1.0-SNAPSHOT
+logging:
+    level:
+        com:
+            birse: DEBUG
+        org:
+            springframework:
+                web: INFO
+spring:
+    application:
+        name: 'simple-service'
+

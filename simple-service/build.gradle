@@ -1,0 +1,18 @@
+apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'simple-service'
+}
+
+dependencies {
+    compile project(":dependency-one")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile project(":dependency-one")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+}
+
+
+
+
+
+
