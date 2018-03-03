@@ -75,3 +75,4 @@ docker/generated/*
 /out/
 !/gradle/wrapper/gradle-wrapper.jar
 **/src/main/docker/**
+maven-versus-gradle.iml
