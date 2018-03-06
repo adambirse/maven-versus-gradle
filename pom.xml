@@ -12,6 +12,7 @@
         <module>simple-service-with-dependencies</module>
         <module>simple-service-no-dependencies</module>
         <module>dependency-one</module>
+        <module>dependency-two</module>
     </modules>
 
 </project>

@@ -6,8 +6,10 @@ jar {
 
 dependencies {
     compile project(":dependency-one")
+    compile project(":dependency-two")
     compile("org.springframework.boot:spring-boot-starter-web")
     testCompile project(":dependency-one")
+    testCompile project(":dependency-two")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
