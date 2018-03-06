@@ -14,4 +14,9 @@ public class LongRunningTests {
        Thread.sleep(5000);
     }
 
+    @Test
+    public void testSomethingElse() throws InterruptedException {
+        Thread.sleep(1000);
+    }
+
 }

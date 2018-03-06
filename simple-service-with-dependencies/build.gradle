@@ -1,7 +1,7 @@
 apply plugin: 'org.springframework.boot'
 
 jar {
-    baseName = 'simple-service'
+    baseName = 'simple-service-with-dependencies'
 }
 
 dependencies {

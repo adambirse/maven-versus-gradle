@@ -1,4 +1,4 @@
-include 'simple-service'
+include 'simple-service-with-dependencies'
 include 'simple-service-no-dependencies'
 include 'dependency-one'
 

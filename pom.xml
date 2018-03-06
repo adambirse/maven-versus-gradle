@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>simple-service</module>
+        <module>simple-service-with-dependencies</module>
         <module>simple-service-no-dependencies</module>
         <module>dependency-one</module>
     </modules>
