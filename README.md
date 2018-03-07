@@ -15,7 +15,7 @@ Like any technology Gradle is ultimately only a tool and it is up to you to appl
 
 So what are some of the things that I like about Gradle:
 
-- [Speed](speed.md) - much much faster.
+- [Speed](documentation/speed.md) - much much faster.
 - Convention over configuration: Gradle build files are much easier to read and understand
 - Modular approach
 - Rich eco system of third party plugins
