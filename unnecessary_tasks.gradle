@@ -1,0 +1,69 @@
+task task1{
+    sleep 1000
+    doFirst {
+        println 'task 1'
+    }
+}
+
+task task2{
+    sleep 1000
+    doFirst {
+        println 'task 2'
+    }
+}
+
+task task3{
+    sleep 1000
+    doFirst {
+        println 'task 3'
+    }
+}
+
+task task4{
+    sleep 1000
+    doFirst {
+        println 'task 4'
+    }
+}
+
+task task5{
+    sleep 1000
+    doFirst {
+        println 'task 5'
+    }
+}
+
+task task6{
+    sleep 1000
+    doFirst {
+        println 'task 6'
+    }
+}
+
+task task7{
+    sleep 1000
+    doFirst {
+        println 'task 7'
+    }
+}
+
+task task8{
+    sleep 1000
+    doFirst {
+        println 'task 8'
+    }
+}
+
+task task9{
+    sleep 1000
+    doFirst {
+        println 'task 9'
+    }
+}
+
+task task10{
+    sleep 1000
+    doFirst {
+        println 'task 10'
+    }
+}

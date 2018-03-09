@@ -72,23 +72,35 @@ Lets run this again and see what happens.
 
 <pre><code>org.gradle.configureondemand=true</code></pre>
 
-Lets enable this flag and see what happens
+So this flag is useful if you want to only run build commands for your sub projects rather than for everything. For example:
 
-<code>gradlew clean build</code>  -> 28 seconds
+<code>gradlew simple-service-no-dependencies:build</code>
 
-hmm ok no difference. Why? 
- 
-The answer to this is that my project is simply not complex enough.  
-When you run any command Gradle runs an initialisation phase 
-where it analyses task dependencies and does a variety of things to make sure that your gradle file is correct and capable of being run.
-It does this for **EVERY** task not just the ones you are running.  If you imagine a build file that includes a variety of third party plugins
-custom tasks etc.  This might take a while. 
+what this flag does is only run the configurations for the task you are running
 
-<code>org.gradle.configureondemand=true</code> limits this checking to only the tasks that you are running.  
-On a complex project this can shave seconds off your build time.
+This is really useful if you have a complicated build system full of lots of tasks that do a lot of work at configuration time. 
 
-AS this example progresses I will endeavour to create a more realistic example that illustrates this.
+I once got this wrong and as a result <code>gradlew clean</code> was taking about 90 seconds to execute.  Lesson learnt the hard way.
 
+Lets look at an example.
 
+I have created a very simple build file <code>unnecessary_tasks.gradle</code> which has ten tasks each of which sleep for 1 seconds as part of the configuration cycle.
+
+This has then been applied to <code>simple-service-with-dependencies/build.gradle</code>
+
+Before starting this comparison lets completely build our project. This way when we run our gradle tasks again they should be nice and quick as we are not doing any work.
+
+Once thats done run the following and see how long it takes:
+
+<code>gradlew simple-service-no-dependencies:build</code>
+
+It took 12 seconds! to do nothing. 
+If you paid attention to the gradle output you will have seen that gradle was evaluating our other projects as part of its configuration.
+Why? We were not touching them and they were already build. What gradle was doing was evaluating the configuration of the entire project.
+12 seconds == the sleep time in our unnecessary tasks (almost!)
+
+Lets do the same thing again but set our configure on demand flag <code>org.gradle.configureondemand=true</code>
+
+This time it only took 2 seconds much more like what we were expecting.
 
 
