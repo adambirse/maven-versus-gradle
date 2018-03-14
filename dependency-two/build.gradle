@@ -13,13 +13,5 @@ repositories {
     jcenter()
 }
 
-processResources {
-    filesMatching("*.properties") {
-        expand project.properties
-    }
-    filesMatching("*.yml") {
-        expand project.properties
-    }
-}
 
 

@@ -5,21 +5,15 @@ allprojects {
 
 }
 
-
 task wrapper(type: Wrapper) {
     gradleVersion = '4.3.1'
     distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-all.zip"
 }
 
-
-
-
 buildscript {
 
     ext {
-
         springBootVersion = '1.5.8.RELEASE'
-
     }
 
     repositories {
