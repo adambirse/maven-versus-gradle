@@ -37,6 +37,8 @@ That's it. All expressed in 14 lines of succinct and easy to read code
 
 Lets now have a look at it's maven equivalent: 
 
+36 lines to do the same thing. Most of it is just noise.
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
