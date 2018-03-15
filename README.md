@@ -17,6 +17,6 @@ So what are some of the things that I like about Gradle:
 
 - [Speed](documentation/speed.md) - much much faster.
 - [Simplicity](documentation/simplicity.md) Gradle build files are much easier to read and understand
-- Modular approach
+- [Modular approach](documentation/modular.md)
 - Rich eco system of third party plugins
 - Extensible with custom tasks: Written in groovy.
