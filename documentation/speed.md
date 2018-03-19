@@ -84,7 +84,7 @@ I once got this wrong and as a result <code>gradlew clean</code> was taking abou
 
 Lets look at an example.
 
-I have created a very simple build file <code>unnecessary_tasks.gradle</code> which has ten tasks each of which sleep for 1 seconds as part of the configuration cycle.
+I have created a very simple build file <code>unnecessary_tasks.gradle</code> which has ten tasks each of which sleep for 1 second as part of the configuration cycle.
 
 This has then been applied to <code>simple-service-with-dependencies/build.gradle</code>
 
